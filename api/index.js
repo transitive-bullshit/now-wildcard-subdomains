@@ -21,15 +21,8 @@ router.get('*', async (ctx) => {
   ctx.body = { subdomain }
 })
 
-// projectId.domain.com
+// identifier.domain.com
 subdomain.use('*', router.routes())
-
-// username.projectId.domain.com
-subdomain.use('*.*', router.routes())
-
-// username.projectId.hash.domain.com
-// username.projectId.version.domain.com
-subdomain.use('*.*.*', router.routes())
 
 app.use(subdomain.routes())
 
