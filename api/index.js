@@ -33,7 +33,7 @@ if (!process.env.NOW_REGION) {
   })
 
   process.on('SIGINT', () => server.close())
-  process.on('SIGKILL', () => server.close())
+  process.on('SIGTERM', () => server.close())
 }
 
 module.exports = app.callback()
