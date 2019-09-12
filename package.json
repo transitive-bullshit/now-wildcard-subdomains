@@ -1,0 +1,19 @@
+{
+  "name": "now-wildcard-subdomains",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Travis Fischer <travis@transitivebullsh.it>",
+  "homepage": "https://saasify.sh",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-router": "^7.4.0",
+    "koa-subdomain": "^3.0.0"
+  }
+}
