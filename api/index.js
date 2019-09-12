@@ -27,7 +27,7 @@ subdomain.use('*', router.routes())
 app.use(subdomain.routes())
 
 if (!process.env.NOW_REGION) {
-  const port = 4013
+  const port = process.env.PORT || 3000
   const server = app.listen(port, () => {
     console.info(`Server up @ http://localhost:${port}`)
   })
